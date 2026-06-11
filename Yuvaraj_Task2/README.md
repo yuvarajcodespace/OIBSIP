@@ -1,8 +1,8 @@
 # 🔐 Password Generator
 
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Level](https://img.shields.io/badge/Level-Beginner-green)
-![Status](https://img.shields.io/badge/Status-Completed-pink)
+![Python](https://img.shields.io/badge/Python-3.x-FF6B6B)
+![Level](https://img.shields.io/badge/Level-Beginner-FF9F43)
+![Status](https://img.shields.io/badge/Status-Completed-FECA57)
 
 A command-line **Password Generator** built in Python. This project generates a random secure password based on user preferences like length and character types. It supports uppercase letters, lowercase letters, numbers and special characters with a built-in **password strength checker** and an intuitive **comma-based selection menu**.
 
