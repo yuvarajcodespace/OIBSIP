@@ -72,7 +72,4 @@ python weather_app.py
 
 **Yuvaraj.T.K** — Python Intern @ Oasis Infobyte
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/YOUR_PROFILE)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/YOUR_USERNAME)
-
 #oasisinfobyte #oasisinfobytefamily #internship #python
