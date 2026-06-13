@@ -10,11 +10,11 @@ Hi! I'm **Yuvaraj.T.K**, a Python Programming Intern at **Oasis Infobyte**. This
 
 ## 📁 Projects
 
-| # | Project | Description |
-|---|---------|-------------|
-| 01 | 🏃 [BMI Calculator](./Yuvaraj_Task1/) | Calculates BMI with Metric & Imperial support |
-| 02 | 🔐 [Password Generator](./Yuvaraj_Task2/) | Generates secure passwords based on user preferences |
-| 03 | 🌤️ [Weather App](./Yuvaraj_Task3/) | Fetches live weather data using OpenWeatherMap API |
+| # | Project | Folder | Description |
+|---|---------|--------|-------------|
+| 01 | 🏃 `BMI Calculator` | [Yuvaraj_Task1](./Yuvaraj_Task1/) | Calculates BMI with Metric & Imperial support |
+| 02 | 🔐 `Password Generator` | [Yuvaraj_Task2](./Yuvaraj_Task2/) | Generates secure passwords based on user preferences |
+| 03 | 🌤️ `Weather App` | [Yuvaraj_Task3](./Yuvaraj_Task3/) | Fetches live weather data using OpenWeatherMap API |
 
 ---
 
