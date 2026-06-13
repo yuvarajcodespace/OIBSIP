@@ -1,8 +1,8 @@
 # 🔐 Password Generator
 
-![Python](https://img.shields.io/badge/Python-3.x-2B2D42)
-![Level](https://img.shields.io/badge/Level-Beginner-8D99AE)
-![Status](https://img.shields.io/badge/Status-Completed-EF233C)
+![Python](https://img.shields.io/badge/Python-3.x-4C1D95)
+![Level](https://img.shields.io/badge/Level-Beginner-F4B400)
+![Status](https://img.shields.io/badge/Status-Completed-A855F7)
 
 ## Description
 
