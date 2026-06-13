@@ -1,8 +1,19 @@
 # ============================================================
-#   BMI CALCULATOR - Oasis Infobyte Python Internship
-#   Task 1: Beginner Level
+#   BMI CALCULATOR
+#   Oasis Infobyte Python Internship - Task 1
 #   Author: Yuvaraj.T.K
 # ============================================================
+
+
+def get_unit_choice():
+    while True:
+        print("\n  Select unit system:")
+        print("  1. Metric   (kg / meters)")
+        print("  2. Imperial (lbs / inches)")
+        choice = input("  Enter 1 or 2: ").strip()
+        if choice in ['1', '2']:
+            return choice
+        print("  ❌ Please enter 1 or 2 only.\n")
 
 
 def get_weight(unit):
@@ -43,17 +54,6 @@ def get_height(unit):
             print("  ❌ Invalid input! Please enter a number only.\n")
 
 
-def get_unit_choice():
-    while True:
-        print("\n  Select unit system:")
-        print("  1. Metric   (kg / meters)")
-        print("  2. Imperial (lbs / inches)")
-        choice = input("  Enter 1 or 2: ").strip()
-        if choice in ['1', '2']:
-            return choice
-        print("  ❌ Please enter 1 or 2.\n")
-
-
 def convert_to_metric(weight_lbs, height_inches):
     weight_kg = weight_lbs * 0.453592
     height_m  = height_inches * 0.0254
@@ -80,7 +80,6 @@ def ideal_weight(height_m):
     min_w = round(18.5 * (height_m ** 2), 1)
     max_w = round(24.9 * (height_m ** 2), 1)
     return min_w, max_w
-
 
 
 def show_bmi_chart():
@@ -110,6 +109,17 @@ def display_result(weight, height, bmi, category, advice):
     print("=" * 47)
 
 
+def ask_calculate_again():
+    while True:
+        again = input("  Type 'yes' to continue or 'no' to exit: ").strip().lower()
+        if again == 'yes':
+            return True
+        elif again == 'no':
+            return False
+        else:
+            print("  ❌ Invalid input! Please type 'yes' or 'no'.\n")
+
+
 def main():
     print("=" * 47)
     print("    🏃 WELCOME TO BMI CALCULATOR 🏃")
@@ -136,9 +146,7 @@ def main():
         display_result(weight, height, bmi, category, advice)
 
         print("\n  Do you want to calculate again?")
-        again = input("  Type 'yes' to continue or 'no' to exit: ").strip().lower()
-
-        if again != 'yes':
+        if not ask_calculate_again():
             print("\n  👋 Stay healthy! Goodbye.\n")
             break
 
