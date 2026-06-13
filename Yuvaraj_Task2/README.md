@@ -1,42 +1,45 @@
 # 🔐 Password Generator
 
-![Python](https://img.shields.io/badge/Python-3.x-FF6B6B)
-![Level](https://img.shields.io/badge/Level-Beginner-FF9F43)
-![Status](https://img.shields.io/badge/Status-Completed-FECA57)
+![Python](https://img.shields.io/badge/Python-3.x-7B2FBE)
+![Level](https://img.shields.io/badge/Level-Beginner-9D4EDD)
+![Status](https://img.shields.io/badge/Status-Completed-C77DFF)
+
+## Description
 
 A command-line **Password Generator** built in Python. This project generates a random secure password based on user preferences like length and character types. It supports uppercase letters, lowercase letters, numbers and special characters with a built-in **password strength checker** and an intuitive **comma-based selection menu**.
-
-## Author
-**Yuvaraj.T.K** — Python Intern @ Oasis Infobyte
-
-## Requirements
-
-- Python 3.x or above
-- No external libraries needed — uses Python built-in modules only (`random`, `string`)
-
-## How to Run
-
-```bash
-python password_generator.py
-```
 
 ## Features
 
 - Choose password length (minimum 6)
 - Select character types using comma-separated input (e.g. `1,2,4`)
 - Visual ✅ ❌ feedback for selected and unselected types
-- Handles invalid choices gracefully — accepts valid ones, rejects invalid ones
+- Handles invalid choices — accepts valid ones, rejects invalid ones
+- Handles empty input and double comma inputs gracefully
 - Password strength indicator (Weak / Medium / Strong / Very Strong)
-- Allows generating multiple passwords in one session
+- Validates yes/no responses properly
+- Generate multiple passwords in one session
 
-## Password Strength
+## Technologies Used
 
-| Types Selected | Strength      |
-|----------------|---------------|
-| 1 type         | Weak 🔴       |
-| 2 types        | Medium 🟡     |
-| 3 types        | Strong 🟢     |
-| 4 types        | Very Strong 💪|
+| Technology | Purpose |
+|------------|---------|
+| Python 3.x | Core programming language |
+| `random` module | Generating random password characters |
+| `string` module | Accessing character sets (uppercase, digits, punctuation) |
+| `set` operations | Managing selected character types |
+| `try/except` | Input validation and error handling |
+
+## How to Run
+
+**Step 1** — Make sure Python is installed:
+```bash
+python --version
+```
+
+**Step 2** — Run the program:
+```bash
+python password_generator.py
+```
 
 ## Sample Output
 
@@ -78,57 +81,8 @@ python password_generator.py
 ==================================================
 ```
 
-## Program Flow
+## Author
 
-```mermaid
-flowchart TD
-    A([🟢 START]) --> B[Show Welcome Message]
-    B --> C[Enter Password Length]
-
-    C --> D{Valid Length?\nnumber and >= 6}
-    D -- No --> E[❌ Show Error\nAsk Again]
-    E --> D
-    D -- Yes --> F[Show Character Type Menu]
-
-    F --> G{Enter Comma\nSeparated Choices}
-    G -- Invalid --> H[❌ Show Error for\nInvalid Choices Only]
-    H --> G
-    G -- Valid --> I[Show ✅ ❌ Selection Result]
-
-    I --> J[Generate Random Password]
-    J --> K[Check Password Strength]
-
-    K -- 1 type --> L1[Weak 🔴]
-    K -- 2 types --> L2[Medium 🟡]
-    K -- 3 types --> L3[Strong 🟢]
-    K -- 4 types --> L4[Very Strong 💪]
-
-    L1 --> M[Display Password\nLength and Strength]
-    L2 --> M
-    L3 --> M
-    L4 --> M
-
-    M --> N{Generate Again?}
-    N -- yes --> C
-    N -- no --> O([🔴 END])
-
-    style A fill:#2ecc71,color:#fff
-    style O fill:#e74c3c,color:#fff
-    style E fill:#e74c3c,color:#fff
-    style H fill:#e74c3c,color:#fff
-    style J fill:#3498db,color:#fff
-    style M fill:#9b59b6,color:#fff
-```
-
-## Concepts Used
-
-- `random` module
-- `string` module
-- Functions
-- User input & validation
-- Exception handling (try/except)
-- Loops (while, for)
-- If/elif/else conditions
-- Set operations
+**Yuvaraj.T.K** — Python Intern @ Oasis Infobyte
 
 #oasisinfobyte #oasisinfobytefamily #internship #python

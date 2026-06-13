@@ -34,8 +34,20 @@ def get_character_types():
 
         choice = input("\n  Your choice: ").strip()
 
+        # Bug Fix 1: handle empty input
+        if not choice:
+            print("  ❌ Input cannot be empty! Please enter your choices.\n")
+            continue
+
         # split by comma and clean spaces
         parts = [c.strip() for c in choice.split(',')]
+
+        # remove empty parts caused by extra commas like "1,,2"
+        parts = [p for p in parts if p != '']
+
+        if not parts:
+            print("  ❌ Input cannot be empty! Please enter your choices.\n")
+            continue
 
         # separate valid and invalid parts
         valid   = [p for p in parts if p in ['1', '2', '3', '4']]
@@ -43,7 +55,7 @@ def get_character_types():
 
         # show error only for invalid ones
         if invalid:
-            print(f"\n  ❌ Invalid choice(s): {', '.join(invalid)} — only 1,2,3,4 are allowed")
+            print(f"  ❌ Invalid choice(s): {', '.join(invalid)} — only 1,2,3,4 are allowed")
 
         # if no valid choices at all, ask again
         if not valid:
@@ -91,6 +103,18 @@ def check_strength(use_upper, use_lower, use_digits, use_special):
         return "Very Strong 💪"
 
 
+def ask_generate_again():
+    # Bug Fix 2: validate yes/no properly
+    while True:
+        again = input("\n  Generate another? (yes/no): ").strip().lower()
+        if again == 'yes':
+            return True
+        elif again == 'no':
+            return False
+        else:
+            print("  ❌ Invalid input! Please type 'yes' or 'no'.\n")
+
+
 def main():
     print("=" * 50)
     print("    🔐 WELCOME TO PASSWORD GENERATOR 🔐")
@@ -115,8 +139,7 @@ def main():
         print("\n  ✅ Copy and save your password safely!")
         print("=" * 50)
 
-        again = input("\n  Generate another? (yes/no): ").strip().lower()
-        if again != 'yes':
+        if not ask_generate_again():
             print("\n  👋 Stay safe online! Goodbye.\n")
             break
 
