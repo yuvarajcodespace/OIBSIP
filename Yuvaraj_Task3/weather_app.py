@@ -136,6 +136,7 @@ def display_weather(data):
 def main():
     print("=" * 52)
     print("      🌤️   WELCOME TO WEATHER APP   🌤️")
+    print("      Oasis Infobyte Python Internship")
     print("=" * 52)
 
     while True:

@@ -1,9 +1,9 @@
 # 🌤️ Weather App
 
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Level](https://img.shields.io/badge/Level-Beginner-green)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![API](https://img.shields.io/badge/API-OpenWeatherMap-orange)
+![Python](https://img.shields.io/badge/Python-3.x-3776AB)
+![Level](https://img.shields.io/badge/Level-Beginner-8E44AD)
+![Status](https://img.shields.io/badge/Status-Completed-2ECC71)
+![API](https://img.shields.io/badge/API-OpenWeatherMap-E67E22)
 
 ## Description
 
