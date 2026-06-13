@@ -1,9 +1,8 @@
 # 🐍 Oasis Infobyte Python Internship
 
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![Internship](https://img.shields.io/badge/Internship-Oasis%20Infobyte-orange)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![Tasks](https://img.shields.io/badge/Tasks-3%20Completed-green)
+![Python](https://img.shields.io/badge/Python-3.x-3776AB)
+![Internship](https://img.shields.io/badge/Internship-Oasis%20Infobyte-E67E22)
+![Tasks](https://img.shields.io/badge/Tasks-3%20Completed-2ECC71)
 
 Hi! I'm **Yuvaraj.T.K**, a Python Programming Intern at **Oasis Infobyte**. This repository contains all 3 beginner-level Python projects I built during the internship. Each project is a command-line application that demonstrates core Python concepts.
 
